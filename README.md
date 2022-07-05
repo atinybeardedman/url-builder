@@ -1,8 +1,7 @@
 # UrlBuilder
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/url_builder`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A simple ruby implementation of the builder pattern to create urls. 
+Supports dynamically adding path segments and query parameters as well as custom path segment separator characters.
 
 ## Installation
 
@@ -16,7 +15,14 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+Instantiate the builder class with the base url and then add segments and query params as needed.
+
+    builder = UrlBuilder::Builder.new(base_url: 'www.example.com')
+    builder.add_segment("foo")
+    builder.add_segment("bar")
+    builder.add_query_param("key", "value")
+    builder.to_s # "www.example.com/foo/bar?key=value"
+ 
 
 ## Development
 

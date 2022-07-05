@@ -8,7 +8,7 @@ module UrlBuilder
     # @param [String] base_url the base url to use. Must include the protocol
     # @param [String] separator - optional path segment separator to use, defaults to '/'
     # @param [Hash] query_params - optional query params to use
-    def initialize(base_url: "", separator: "/", query_params: {})
+    def initialize(base_url: , separator: "/", query_params: {})
       @base_url = base_url
       @separator = separator
       @query_params = query_params.with_indifferent_access
