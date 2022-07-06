@@ -2,11 +2,8 @@
 
 require "url_builder"
 
-RSpec.describe UrlBuilder::Builder do
-  it "adds segments to a base url" do
-    builder = UrlBuilder::Builder.new(base_url: "www.example.com")
-    builder.add_segment("foo")
-    builder.add_segment("bar")
-    expect(builder.to_s).to eq("www.example.com/foo/bar")
+RSpec.describe UrlBuilder do
+  it "has a version number" do
+    expect(UrlBuilder::VERSION).not_to be nil
   end
 end

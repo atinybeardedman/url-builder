@@ -2,11 +2,10 @@
 
 require "bundler/gem_tasks"
 
-
 begin
-  require 'rspec/core/rake_task'
+  require "rspec/core/rake_task"
   RSpec::Core::RakeTask.new(:spec)
-rescue => LoadError
+rescue StandardError => e
 end
 
 require "rubocop/rake_task"
