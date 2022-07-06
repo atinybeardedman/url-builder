@@ -2,7 +2,7 @@
 
 require "url_builder"
 
-describe UrlBuilder::Builder do
+RSpec.describe UrlBuilder::Builder do
   it "adds segments to a base url" do
     builder = UrlBuilder::Builder.new(base_url: "www.example.com")
     builder.add_segment("foo")
