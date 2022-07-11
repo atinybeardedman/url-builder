@@ -5,7 +5,8 @@ require "bundler/gem_tasks"
 begin
   require "rspec/core/rake_task"
   RSpec::Core::RakeTask.new(:spec)
-rescue StandardError => e
+rescue StandardError
+  nil
 end
 
 require "rubocop/rake_task"
