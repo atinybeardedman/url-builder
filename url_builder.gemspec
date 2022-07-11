@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Sean Dickinson"]
   spec.email = ["contact@seandickinson.dev"]
 
-  spec.summary = "A Ruby Class to create URLs using the builder pattern"
-  spec.description = "See the github page for more details"
+  spec.summary = "A Ruby class to create URLs using the builder pattern"
+  spec.description = "An implementation of the builder design pattern in Ruby to create URLs"
   spec.homepage = "https://github.com/atinybeardedman/url-builder"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
